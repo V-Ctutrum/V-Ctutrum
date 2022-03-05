@@ -1,0 +1,136 @@
+:root{
+    --main-color: #25282f;
+    --Header-color:#fce027;
+}
+
+/* Strat Global Rules */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+/* End Global Rules */
+
+
+/* Start Header */
+header{
+    display: flex;
+    background-color: var(--main-color);
+    width: 100%;
+}
+header img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 10px 20px 10px 20px;
+}
+header h1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: var(--Header-color);
+    font-weight: 700;
+    width: 375px;
+    font-size: 30px;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 800px;
+    font-size: 20px;
+}
+header ul li{
+    list-style: none;
+
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .5s;
+}
+header ul li a:hover{
+    color: var(--Header-color);
+}
+.under-header{
+    height: 3px;
+    background-color: var(--Header-color);
+    color: var(--Header-color);
+}
+header .menu{
+    width: 50px;
+    background-color: white;
+}
+header .toggle-menu{
+    display: none;
+}
+@media (max-width: 767px) {
+    header ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 235px;
+        font-size: 15px;
+        background-color: var(--main-color);
+        z-index: 5;
+        
+        
+    }
+    header .toggle-menu {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        color: white;
+    }
+    header ul li{
+        padding: 10px;
+        transition: .2s;
+    }
+    header ul li:hover{
+        padding: 15px;
+    }
+    
+
+}
+/* End Header */
+
+/* Start Section */
+
+section{
+    width: 100%;
+    height: 87.3vh;
+    background-color: var(--main-color);
+}
+section .images{
+    width: 100%;
+    height: 530px;
+    background-color: #25282f;
+    opacity: .6;
+}
+section .images img {
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+section p {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+/* End Section */
